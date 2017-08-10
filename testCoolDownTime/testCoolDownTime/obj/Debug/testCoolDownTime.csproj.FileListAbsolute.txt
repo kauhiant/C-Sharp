@@ -1,0 +1,9 @@
+d:\文件\visual studio 2015\Projects\testCoolDownTime\testCoolDownTime\bin\Debug\testCoolDownTime.exe.config
+d:\文件\visual studio 2015\Projects\testCoolDownTime\testCoolDownTime\obj\Debug\testCoolDownTime.csprojResolveAssemblyReference.cache
+d:\文件\visual studio 2015\Projects\testCoolDownTime\testCoolDownTime\obj\Debug\testCoolDownTime.Form1.resources
+d:\文件\visual studio 2015\Projects\testCoolDownTime\testCoolDownTime\obj\Debug\testCoolDownTime.Properties.Resources.resources
+d:\文件\visual studio 2015\Projects\testCoolDownTime\testCoolDownTime\obj\Debug\testCoolDownTime.csproj.GenerateResource.Cache
+d:\文件\visual studio 2015\Projects\testCoolDownTime\testCoolDownTime\bin\Debug\testCoolDownTime.exe
+d:\文件\visual studio 2015\Projects\testCoolDownTime\testCoolDownTime\bin\Debug\testCoolDownTime.pdb
+d:\文件\visual studio 2015\Projects\testCoolDownTime\testCoolDownTime\obj\Debug\testCoolDownTime.exe
+d:\文件\visual studio 2015\Projects\testCoolDownTime\testCoolDownTime\obj\Debug\testCoolDownTime.pdb
