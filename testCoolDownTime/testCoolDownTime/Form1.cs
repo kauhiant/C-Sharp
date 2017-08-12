@@ -12,12 +12,13 @@ namespace testCoolDownTime
 {
     public partial class Form1 : Form
     {
-        private CoolDownTime test;
+        private CoolDownTimeList test;//test 
+       
 
         public Form1()
         {
             InitializeComponent();
-            test = new CoolDownTime(2);
+            test = new CoolDownTimeList(10);
 
             PictureBox tmpImg = new PictureBox();
             me.setImage(ref tmpImg);
@@ -36,31 +37,45 @@ namespace testCoolDownTime
         {
             switch (e.KeyCode) {
                 case Keys.Up:
-                    test.record();
                     break;
                 case Keys.Down:
-                    label1.Text = test.isCoolDown().ToString();
                     break;
                 case Keys.Left:
-                    label1.Text = test.isNotCoolDown().ToString();
-                    me.move(-10);
+                    if (test.isNotCoolDown(me))
+                    {
+                        me.move(-10);
+                        test.record(ref me, me.getCdTime());
+                    }
+                    
                     break;
                 case Keys.Right:
-                    label1.Text = "null";
-                    me.move(10);
+                    if (test.isNotCoolDown(me))
+                    {
+                        me.move(10);
+                        test.record(ref me, me.getCdTime());
+                    }
                     break;
                 case Keys.Space:
-                    me.attack();
+                    label1.Text = test.unCoolTimeList.Count.ToString();
+                //    me.attack();
                     break;
                 case Keys.W:
                     break;
                 case Keys.A:
-                    you.move(-10);
+                    if (test.isNotCoolDown(you))
+                    {
+                        you.move(-10);
+                        test.record(ref you, you.getCdTime());
+                    }
                     break;
                 case Keys.S:
                     break;
                 case Keys.D:
-                    you.move(10);
+                    if (test.isNotCoolDown(you))
+                    {
+                        you.move(10);
+                        test.record(ref you, you.getCdTime());
+                    }
                     break;
             }
         }
